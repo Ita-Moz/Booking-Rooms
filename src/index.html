@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Booking & Chill Responsive</title>
+        <!-- BOOSTRAP ICONS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        />
+        <!-- OWLCAROUSEL 2 -->
+        <link rel="stylesheet" href="./assets/utils/owlCarousel2/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/utils/owlCarousel2/owl.theme.default.min.css" />
+
+        <!-- RUN with environment dev -->
+        <!-- <style lang="sass">
+            @import url('./assets/sass/styles.scss');
+        </style> -->
+
+        <!-- RUN with environment product -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="min-w-full">
+            <!-- SUB NAVBAR WHEN SCROLL -->
+            <div
+                id="sub__nav"
+                class="hidden fixed top-0 left-0 bg-white text-primary w-full items-center justify-between px-10 py-5 gap-10 z-50 lg:px-[70px] lg:py-2"
+            >
+                <div class="w-[50px] ml-[20px]">
+                    <a href="#">
+                        <img
+                            class="w-[40px] scale-[2] object-cover object-center lg:ml-[50px]"
+                            src="./assets/images/logo-black.svg"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="navbar__list hide-mobile flex gap-4 items-center justify-end font-roboto"
+                >
+                    <a href="#" class="hover:text-[#f2958a] transition-all">
+                        <i class="bi bi-bell-fill text-xl mx-[10px]"></i
+                        ><span class="font-medium uppercase">Reservations</span></a
+                    >
+                    <a href="#" class="hover:text-[#f2958a] transition-all">
+                        <i class="bi bi-telephone-fill text-xl mx-[10px]"></i>
+                        <span class="font-medium">+123456789</span></a
+                    >
+                    <i
+                        class="nav-menu bi bi-list text-[40px] hover:text-[#f2958a] transition-all curs cursor-pointer"
+                    ></i>
+                </div>
+            </div>
+            <section class="site-alert py-[28px] lg:py-[36px] bg-primary">
+                <div class="px-[32px]">
+                    <p class="text-center font-roboto text-lg font-medium">
+                        <strong>NOW OPEN</strong> in the Heart of Flagstaff – High Country Motor
+                        Lodge – An All New Boutique Hotel Experience
+                    </p>
+                </div>
+            </section>
+            <div class="home__hero bg-hero bg-no-repeat bg-cover pb-[100px]">
+                <header id="header">
+                    <nav
+                        id="navbar"
+                        class="flex items-center justify-between px-[28px] pt-[28px] md:px-[100px]"
+                    >
+                        <a href="#">
+                            <img
+                                class="w-[80px] md:w-[100px]"
+                                src="./assets/images/logo.svg"
+                                alt="logo"
+                            />
+                        </a>
+                        <div
+                            class="navbar__list hide-mobile flex gap-10 items-center justify-center font-roboto"
+                        >
+                            <a href="#" class="hover:text-[#f2958a] transition-all">
+                                <i class="bi bi-bell-fill text-xl mx-[10px]"></i
+                                ><span class="font-medium uppercase">Reservations</span></a
+                            >
+                            <a href="#" class="hover:text-[#f2958a] transition-all">
+                                <i class="bi bi-telephone-fill text-xl mx-[10px]"></i>
+                                <span class="font-medium">+123456789</span></a
+                            >
+                            <i
+                                class="nav-menu bi bi-list text-[40px] hover:text-[#f2958a] transition-all cursor-pointer"
+                            ></i>
+                        </div>
+                    </nav>
+                    <div class="home__hero-img p-[32px] w-full md:relative">
+                        <div
+                            class="overflow-hidden w-[100%] h-[200px] md:w-[550px] md:h-[550px] lg:w-[800px] lg:h-[400px] xl:h-[500px] bg-cover mx-auto"
+                        >
+                            <iframe
+                                id="video__hero"
+                                class="pt-[20px] mx-auto -translate-y-[50px] md:-translate-y-0 md:scale-[2.3]"
+                                src="https://player.vimeo.com/video/364823473?background=1&amp;autoplay=1&amp;loop=1&amp;autopause=0"
+                                width="600"
+                                height="360"
+                                frameborder="0"
+                                webkitallowfullscreen=""
+                                mozallowfullscreen=""
+                                allowfullscreen=""
+                                data-ready="true"
+                            ></iframe>
+                        </div>
+                        <div
+                            class="text-center py-[50px] md:text-left md:absolute md:top-[20%] lg:top-10 md:left-[70px] xl:left-[15%]"
+                        >
+                            <div class="text-[5vw] font-medium md:w-[80px]">Find Yourself</div>
+                            <div class="text-[5vw] font-medium">Here</div>
+                            <a
+                                href="#"
+                                class="inline-block my-8 w-[256px] rounded-md border-[1px] border-white text-center px-[60px] py-5 font-roboto font-bold bg-transparent hover:text-black hover:bg-white duration-700 ease-in-out"
+                                >BOOK NOW</a
+                            >
+                            <div class="group">
+                                <a
+                                    href="#"
+                                    class="font-roboto font-bold relative group-hover:text-[#f2958a] transition-all"
+                                >
+                                    WATCH VIDEO
+                                    <span
+                                        class="absolute w-full bg-primary bottom-[-10px] left-0 h-[2px] group-hover:bg-[#f2958a]"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <main id="main" class="pt-[80px] pb-[178px] text-primary">
+                <section class="hello">
+                    <div class="px-[32px]">
+                        <div class="flex justify-center items-center pt-[22px] pb-[42px]">
+                            <img class="w-[34px]" src="./assets/images/tree.svg" alt="tree" />
+                        </div>
+                        <div>
+                            <p class="text-center text-[23px] md:text-[28px] lg:text-[36px]">
+                                The Scott Resort & Spa is an ode to discovery, a love letter to life
+                                lived on the borderlands.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-[96px] lg:mt-[200px]">
+                    <div
+                        class="pb-[40px] px-[32px] text-center grid lg:grid-rows-5 lg:grid-cols-2 lg:grid-flow-row lg:text-left xl:mx-[100px]"
+                    >
+                        <ul
+                            class="rooms h-[66vw] order-2 md:h-[40vw] md:px-20 lg:order-1 lg:row-span-5 lg:col-start-1 lg:col-end-2 xl:h-[35vw] xl:w-[35vw] xl:px-0"
+                        >
+                            <li class="w-full h-full">
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/rooms/pool-view-hero-620x800.webp"
+                                    alt="rooms"
+                                />
+                            </li>
+                            <li class="hidden w-full h-full">
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/rooms/lagoon-view-hero-620x800.webp"
+                                    alt="rooms"
+                                />
+                            </li>
+                            <li class="hidden w-full h-full">
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/rooms/Courtyard-Guest-Room-620x800.webp"
+                                    alt="rooms"
+                                />
+                            </li>
+                            <li class="hidden w-full h-full">
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/rooms/Suites-620x800.webp"
+                                    alt="rooms"
+                                />
+                            </li>
+                        </ul>
+                        <div
+                            id="rooms-right"
+                            class="mb-[40px] order-1 lg:mb-0 lg:order-2 lg:row-span-1 lg:ml-[82px]"
+                        >
+                            <h4
+                                class="mb-[15px] text-[19px] md:text-[21px] xl:text-[24px] lg:text-[23px]"
+                            >
+                                Rooms
+                            </h4>
+                            <h2 class="my-[15px] text-[28px] lg:text-5xl">Stay with us</h2>
+                            <p class="font-roboto text-[18px] leading-6">
+                                A sanctuary set against Scottsdale’s historic downtown.
+                            </p>
+                        </div>
+                        <div class="order-3 lg:row-span-4 lg:ml-[82px]">
+                            <ul class="mt-[50px] rooms__list-title">
+                                <li class="li li_before"><h4>Pool View Room</h4></li>
+                                <li class="li"><h4>Lagoon View Room</h4></li>
+                                <li class="li"><h4>Courtyard Room</h4></li>
+                                <li class="li"><h4>Suites</h4></li>
+                            </ul>
+                            <a
+                                href="#"
+                                class="btn font-roboto ouline mx-auto mt-[35px] border-primary w-[254px] h-[70px] font-bold duration-700 hover:bg-primary hover:text-white"
+                                >VIEW ALL ROOMS</a
+                            >
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="gallery" class="relative mt-20 hide-mobile">
+                        <ul class="slider">
+                            <li class="h-[80vh] relative">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/Welcome-to-The-Scott-Resort-Spa-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/The-scene-at-check-in-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/The-lobby-a-lush-open-air-concept-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/The-Canal-Club-dining-room-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/The-Canal-Club-Bar-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/La-Playa-Pool-at-dusk-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/Gathering-area-by-the-lobbys-indoor-fireplace-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/Gallery_Queen-Queen-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                            <li class="h-[80vh] relative hidden">
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="./assets/images/gallery/Cocktail-fare-at-The-Canal-Club-1700x880.webp"
+                                    alt="logo"
+                                />
+                            </li>
+                        </ul>
+                        <div
+                            class="absolute bg-white py-10 flex justify-between items-center w-full bottom-[-50px] right-0 px-10"
+                        >
+                            <div class="flex gap-5">
+                                <p class="couter-gallery">
+                                    <span class="counter-active">1</span>/
+                                    <span class="counter-total">9</span>
+                                </p>
+                                <ul class="slider__title">
+                                    <li>Welcome to The Scott Resort &amp; Spa</li>
+                                    <li class="hidden">The scene at check-in</li>
+                                    <li class="hidden">The Canal Club dining room</li>
+                                    <li class="hidden">The Canal Club Bar</li>
+                                    <li class="hidden">Cocktail fare at The Canal Club</li>
+                                    <li class="hidden">The lobby: a lush open-air concept</li>
+                                    <li class="hidden">
+                                        Gathering area by the lobby’s indoor fireplace
+                                    </li>
+                                    <li class="hidden">La Playa Pool at dusk</li>
+                                    <li class="hidden">Stay with us</li>
+                                </ul>
+                            </div>
+                            <div class="flex gap-5">
+                                <i
+                                    id="prev"
+                                    class="bi bi-arrow-left cursor-pointer text-4xl text-[#e1e5e4]"
+                                    onclick="prev()"
+                                ></i>
+                                <i
+                                    id="next"
+                                    class="bi bi-arrow-right cursor-pointer text-4xl text-primary"
+                                    onclick="next()"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gallery-mobile" class="md:hidden">
+                        <div class="w-full h-[80vw] relative">
+                            <img
+                                class="w-full h-full object-cover object-center"
+                                src="./assets/images/gallery/Welcome-to-The-Scott-Resort-Spa-1700x880.webp"
+                                alt=""
+                            />
+                            <div
+                                class="show__gallery-mobile absolute inset-0 flex flex-col justify-center items-center bg-[rgba(69,93,88,.6)]"
+                            >
+                                <i
+                                    class="bi bi-arrows-angle-expand font-bold text-white text-2xl"
+                                ></i>
+                                <h2 class="font-bold text-2xl opacity-1 text-white">
+                                    View gallery
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            id="modal__gallery-mobile"
+                            class="z-50 hidden fixed inset-0 bg-primary"
+                        >
+                            <div
+                                id="modal-close"
+                                class="absolute cursor-pointer right-0 top-0 bg-white text-5xl font-bold w-[66px] h-[66px] flex justify-center items-center"
+                            >
+                                <i class="bi bi-x"></i>
+                            </div>
+                            <div class="flex items-center w-full h-full">
+                                <ul class="modal__slider">
+                                    <li class="w-[100vw]">
+                                        <img
+                                            class="w-full object-cover"
+                                            src="./assets/images/gallery/Welcome-to-The-Scott-Resort-Spa-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/The-scene-at-check-in-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/The-lobby-a-lush-open-air-concept-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/The-Canal-Club-dining-room-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/The-Canal-Club-Bar-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/La-Playa-Pool-at-dusk-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/Gathering-area-by-the-lobbys-indoor-fireplace-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/Gallery_Queen-Queen-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                    <li class="w-[100vw] hidden">
+                                        <img
+                                            class="h-full w-full object-cover"
+                                            src="./assets/images/gallery/Cocktail-fare-at-The-Canal-Club-1700x880.webp"
+                                            alt="logo"
+                                        />
+                                    </li>
+                                </ul>
+                                <div
+                                    class="absolute w-full px-10 bottom-10 right-0 flex justify-between items-center"
+                                >
+                                    <div>
+                                        <p class="couter-gallery text-white">
+                                            <span class="modal__counter-active text-white">1</span>/
+                                            <span class="counter-total text-white">9</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="flex gap-5">
+                                        <i
+                                            id="modal-prev"
+                                            class="bi bi-arrow-left cursor-pointer text-4xl text-[#7a7a7a]"
+                                            onclick="modalPrev()"
+                                        ></i>
+                                        <i
+                                            id="modal-next"
+                                            class="bi bi-arrow-right cursor-pointer text-4xl text-[#e1e5e4]"
+                                            onclick="modalNext()"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        id="imbibe"
+                        class="flex flex-col lg:grid lg:grid-cols-2 px-10 mt-[144px] md:my-[230px] md:px-20 lg:items-center"
+                    >
+                        <div class="w-full h-[66vw] lg:order-2 lg:col-span-1 xl:h-[40vw]">
+                            <video
+                                class="w-full h-full object-cover"
+                                autoplay="true"
+                                loop="true"
+                                src="./assets/videos/Home-Imbibe.mp4"
+                            ></video>
+                        </div>
+                        <div
+                            class="mt-10 md:ml-28 md:w-[66.6667%] lg:w-[80%] lg:order-1 lg:col-span-1 lg:ml-0 xl:w-[70%] xl:mx-auto"
+                        >
+                            <h2
+                                class="text-[28px] mb-4 md:text-[38px] lg:text-[45px] xl:text-[54px]"
+                            >
+                                Imbibe
+                            </h2>
+                            <p class="font-roboto text-lg text-left leading-7 lg:text-left">
+                                Sip craft cocktails in your own personal cabana, or settle in at one
+                                of our intimate dining tables for a multi-course journey. With a nod
+                                toward Hemingway’s Havana, The Canal Club serves up
+                                Caribbean-inspired classics with a contemporary twist.
+                            </p>
+                            <a
+                                href="#"
+                                class="inline-flex justify-center items-center border-[1px] border-primary bg-transparent uppercase font-roboto font-bold mt-10 min-w-[250px] px-10 py-6 rounded-md hover:bg-primary hover:text-white cursor-pointer"
+                                >dine with us</a
+                            >
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-[144px]">
+                    <div
+                        id="relax-banner"
+                        class="bg-[url('./assets/images/texture-1700x880.webp')] object-cover object-center text-white relative md:h-[620px] md:flex md:items-center md:justify-center xl:h-[880px]"
+                    >
+                        <div
+                            class="px-[32px] py-[50px] md:px-[64px] md:flex md:gap-10 lg:gap-20 xl:gap-40"
+                        >
+                            <h2
+                                class="text-[28px] leading-8 opacity-1 md:text-[38px] md:w-1/2 md:leading-tight lg:text-[45px] xl:text-[54px]"
+                            >
+                                Relax and revive with one of La Vidorra’s rejuvenating spa
+                                treatments.
+                            </h2>
+                            <div class="font-roboto mt-5 md:w-1/2">
+                                <p class="leading-7 text-[18px]">
+                                    With six private sun-washed treatment rooms, La Vidorra is
+                                    dedicated to your serenity and tranquility. As a guest of La
+                                    Vidorra Spa at The Scott, please enjoy the complimentary use of
+                                    the Resort pools, fitness center, bathrobes, slippers, and
+                                    special blend of herbal teas.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="inline-flex justify-center items-center px-16 py-5 border-white border-[1px] rounded-md text-white mt-10 hover:text-primary hover:bg-white"
+                                    >LEARN MORE</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-[144px] md:mt-[174px] lg:mt-[224px]">
+                    <h2
+                        class="text-center font-medium text-[28px] mb-[56px] md:text-[38px] lg:text-[45px] xl:text-[54px]"
+                    >
+                        Events
+                    </h2>
+                    <div class="px-[32px] md:px-[62px] lg:flex lg:gap-10 xl:px-[160px] xl:gap-28">
+                        <div class="lg:w-1/2">
+                            <div
+                                class="h-[66vw] overflow-hidden md:h-[55vw] lg:h-[350px] xl:h-[375px]"
+                            >
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/meetings-750x750.webp"
+                                    alt="events-img"
+                                />
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-[23px] text-center pb-5 mt-8 md:text-[28px] xl:text-[36px]"
+                                >
+                                    Meetings & Events
+                                </h3>
+                                <p
+                                    class="text-center text-[18px] font-roboto leading-snug lg:px-[55px]"
+                                >
+                                    Getting ideas? Make them reality by hosting your next meeting or
+                                    event at The Scott.
+                                </p>
+                                <div class="mt-10 mb-20 text-center group">
+                                    <a
+                                        class="relative text-center text-primary font-bold tracking-wide font-roboto after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:block after:h-[1px] after:bg-primary after:group-hover:bg-[#f2958a] group-hover:text-[#f2958a] transition-all"
+                                        href="#"
+                                        >LEARN MORE</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <div
+                                class="h-[66vw] overflow-hidden md:h-[55vw] lg:h-[350px] xl:h-[375px]"
+                            >
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="./assets/images/weddings-small-750x750.webp"
+                                    alt="weddings-img"
+                                />
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-[23px] text-center pb-5 mt-8 md:text-[28px] xl:text-[36px]"
+                                >
+                                    Weddings
+                                </h3>
+                                <p
+                                    class="text-center text-[18px] font-roboto leading-snug lg:px-[55px]"
+                                >
+                                    Unforgettable occasions, tailored just for you. Have the wedding
+                                    you envisioned from the moment you said “Yes!”
+                                </p>
+                                <div class="mt-10 mb-20 text-center group">
+                                    <a
+                                        class="relative text-center text-primary font-bold tracking-wide font-roboto after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:block after:h-[1px] after:bg-primary after:group-hover:bg-[#f2958a] group-hover:text-[#f2958a] transition-all"
+                                        href="#"
+                                        >LEARN MORE</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-[144px] md:mt-[176px] lg:mt-[224px] xl:mt-[256px]">
+                    <div class="px-[32px] mb-16 md:px-[62px] lg:px-[70px]">
+                        <h2
+                            class="text-center text-[28px] md:text-[38px] md:text-left lg:text-[45px] xl:text-[54px]"
+                        >
+                            Connect with us
+                        </h2>
+                        <p class="font-roboto mt-[16px] text-center text-[18px] md:text-left">
+                            Inspired by you, always —
+                            <a
+                                href="#"
+                                class="relative after:absolute after:w-full after:h-[1px] after:bg-primary after:-bottom-1 after:left-0"
+                                >#TheScottResort</a
+                            >
+                        </p>
+                    </div>
+                    <div class="owl-carousel">
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/thebalimarket-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/stephaniecrusso-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/ryannicolephotography-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/nicolearendevents-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/lamstyle_-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/chelseyls-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/cereously-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                        <div class="md:mr-[116px]">
+                            <img
+                                src="./assets/images/social/aynsleyovard-450x450.webp"
+                                alt="social-carousel"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div
+                    id="signup-form"
+                    class="bg-[#3f5651] w-full h-[226px] flex justify-center items-center px-[32px]"
+                >
+                    <h2
+                        class="text-white text-center text-[23px] md:text-[28px] lg:text-[32px] xl:text-[36px]"
+                    >
+                        Sign up for special offers and promotions
+                        <i class="bi bi-arrows-angle-expand text-[16px] animate-ping"></i>
+                    </h2>
+                </div>
+                <div id="send-form" class="bg-[#3f5651] w-full text-white hidden">
+                    <div
+                        class="px-[32px] relative pt-[81px] pb-[40px] md:px-[62px] lg:px-[70px] xl:px-[88px]"
+                    >
+                        <div id="close-form" class="absolute top-10 right-10 hover:cursor-pointer">
+                            <i class="bi bi-x-lg text-[30px]"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <label
+                                class="text-[19px] md:text-[21px] lg:text-[23px] xl:text-[24px] pt-[40px] relative after:absolute after:content-['*'] after:text-[#ffb7ae] after:w-[1px]"
+                                for="first-name"
+                                >First name</label
+                            >
+                            <input
+                                class="bg-transparent font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                name="first-name"
+                                type="text"
+                                placeholder="First name"
+                            />
+                        </div>
+                        <div class="flex flex-col">
+                            <label
+                                class="inline-block text-[19px] md:text-[21px] lg:text-[23px] xl:text-[24px] pt-[40px] relative after:absolute after:content-['*'] after:text-[#ffb7ae] after:w-[1px]"
+                                for="last-name"
+                                >Last name</label
+                            >
+                            <input
+                                class="bg-transparent font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                name="last-name"
+                                type="text"
+                                placeholder="Last name"
+                            />
+                        </div>
+                        <div class="flex flex-col">
+                            <label
+                                class="text-[19px] md:text-[21px] lg:text-[23px] xl:text-[24px] pt-[40px] relative after:absolute after:content-['*'] after:text-[#ffb7ae] after:w-[1px]"
+                                for="email-address"
+                                >Email Address</label
+                            >
+                            <input
+                                class="bg-transparent font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                name="email-address"
+                                type="email"
+                                placeholder="Your email"
+                            />
+                        </div>
+                        <div class="bg-transparent flex flex-col">
+                            <label
+                                class="text-[19px] md:text-[21px] lg:text-[23px] xl:text-[24px] pt-[40px] relative after:absolute after:content-['*'] after:text-[#ffb7ae] after:w-[1px]"
+                                for="address"
+                                >Address</label
+                            >
+                            <input
+                                class="bg-transparent font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                name="address"
+                                type="text"
+                                placeholder="City"
+                            />
+                            <div class="md:flex md:gap-10">
+                                <input
+                                    class="md:w-1/2 bg-transparent mt-[13px] font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                    name="address"
+                                    type="text"
+                                    placeholder="State / Province / Region"
+                                />
+                                <input
+                                    class="md:w-1/2 bg-transparent mt-[13px] font-roboto py-[11px] border-b-[1px] border-[#dadfde] outline-none"
+                                    name="address"
+                                    type="text"
+                                    placeholder="ZIP / Postal Code"
+                                />
+                            </div>
+                        </div>
+                        <div class="mt-[40px] w-full flex justify-center items-center">
+                            <button
+                                class="w-[254px] h-[72px] rounded-md border-white border-[1px] font-roboto hover:bg-white hover:text-primary"
+                            >
+                                SIGN UP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-primary text-center pt-20 pb-10 md:flex md:flex-col lg:grid lg:grid-cols-12 lg:grid-rows-3 lg:text-left"
+                >
+                    <div class="flex justify-center md:order-1 lg:row-span-2 lg:col-span-2">
+                        <img
+                            class="w-[80px] lg:w-[100px]"
+                            src="./assets/images/logo-footer.svg"
+                            alt="logo footer"
+                        />
+                    </div>
+                    <div
+                        class="md:order-4 md:flex md:flex-row-reverse md:px-[62px] lg:order-3 lg:row-span-2 lg:col-span-6 lg:px-0"
+                    >
+                        <ul class="flex flex-col gap-3 mt-14 md:w-1/2">
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                >
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >News & Accolades</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >Sitemap</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >Accessibility</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-roboto text-[18px] hover:text-hover transition-all hover:cursor-pointer"
+                                    href="#"
+                                    >FAQ</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="flex flex-col gap-3 mt-16 md:w-1/2">
+                            <li class="font-roboto text-[18px] mb-1">Reservations</li>
+                            <li class="font-roboto text-[18px]">Tel:+84123456789</li>
+                            <li class="font-roboto text-[18px]">Tel:+84987654321</li>
+                            <li class="font-roboto text-[18px]">Tel:+84158456465</li>
+                        </ul>
+                    </div>
+                    <div class="mt-16 md:order-2 lg:order-2 lg:row-span-2 lg:col-span-3">
+                        <p class="font-roboto leading-normal text-[18px]">
+                            The Scott Resort &amp; Spa<br />
+                            4925 North Scottsdale Road,<br />
+                            Scottsdale,<br />
+                            Arizona 85251
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center mt-16 md:order-3 lg:order-4 lg:row-span-2 lg:col-span-1"
+                    >
+                        <ul class="flex gap-10 text-[22px] text-[#c3c8c7] lg:flex-col">
+                            <li>
+                                <a href="#" class="hover:text-hover"
+                                    ><i class="bi bi-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-hover"
+                                    ><i class="bi bi-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-hover"
+                                    ><i class="bi bi-instagram"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="text-[#a0a9a7] font-roboto px-[30px] mt-10 md:order-5 lg:col-span-12 lg:row-span-1"
+                    >
+                        Website used for learning not for commercial purposes
+                    </div>
+                </div>
+                <div
+                    class="py-[48px] px-[32px] bg-white w-full text-primary md:px-[62px] xl:pt-[120px] xl:pb-[160px]"
+                >
+                    <div>
+                        <h2
+                            class="text-[23px] text-center md:text-[28px] lg:text-[32px] xl:text-[36px]"
+                        >
+                            Our Hotels
+                        </h2>
+                    </div>
+                    <div class="mt-5 mx-[43px]">
+                        <p class="text-[18px] font-roboto font-medium text-center leading-normal">
+                            Phonenix <span>-</span> Scottsdale <span>-</span> Carmel
+                            <span>-</span> Laguna Beach
+                        </p>
+                    </div>
+
+                    <div class="mt-[55px] hidden brand">
+                        <ul class="flex gap-20 justify-center items-center">
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        class="w-[105px]"
+                                        src="./assets/images/brand/arizona-grand.png"
+                                        alt="brand"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        class="w-[105px]"
+                                        src="./assets/images/brand/hotel-carmel.png"
+                                        alt="brand"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        class="w-[105px]"
+                                        src="./assets/images/brand/la-playa-carmel.png"
+                                        alt="brand"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        class="w-[58px]"
+                                        src="./assets/images/brand/laguna-beach.png"
+                                        alt="brand"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        class="w-[90px]"
+                                        src="./assets/images/brand/the-inn-at-laguna.png"
+                                        alt="brand"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items-center w-full mt-10">
+                        <a
+                            href="#"
+                            class="uppercase flex justify-center items-center text-[14px] font-bold font-roboto border-primary border-[1px] h-[70px] w-[308px] rounded-md tracking-widest mx-auto md:min-w-[400px]"
+                            >Explore classic hotels</a
+                        >
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- NAV WHEN CLICK VAO ICON MENU -->
+        <div id="menu" class="hidden z-[999] fixed inset-0 w-full bg-[#323e3c] overflow-y-auto lg:overflow-y-hidden">
+            <div
+                class="flex text-white w-full items-center justify-between px-10 py-10 gap-10 lg:px-[70px] lg:py-[33px]"
+            >
+                <div class="w-[50px] ml-[20px]">
+                    <img
+                        class="w-[40px] scale-[2] object-cover object-center lg:ml-[50px]"
+                        src="./assets/images/logo.svg"
+                        alt="logo"
+                    />
+                </div>
+                <div
+                    class="navbar__list hide-mobile flex gap-4 items-center justify-end font-roboto"
+                >
+                    <a href="#" class="hover:text-[#f2958a] transition-all">
+                        <i class="bi bi-bell-fill text-xl mx-[10px]"></i
+                        ><span class="font-medium uppercase md:text-[18px]">Reservations</span></a
+                    >
+                    <a href="#" class="hover:text-[#f2958a] transition-all">
+                        <i class="bi bi-telephone-fill text-xl mx-[10px]"></i>
+                        <span class="font-medium md:text-[18px]">+123456789</span></a
+                    >
+                    <a id="close-menu" href="#" class="hover:text-[#f2958a] transition-all"
+                        ><i class="bi bi-x-lg text-3xl"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="px-[40px] w-full h-full md:flex md:items-center md:justify-center">
+                <div
+                    class="md:flex md:justify-between md:items-center md:px-[50px] md:gap-[60px] lg:gap-[100px]"
+                >
+                    <ul class="list__menu-1">
+                        <li>
+                            <span class="caption">01</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Stay</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">02</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Eat &amp; Drink</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">03</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Spa &amp; Wellness</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">04</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Pools</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">05</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Location</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="list__menu-2">
+                        <li>
+                            <span class="caption">06</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Meetings &amp; Events</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">07</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Weddings</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">08</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >What's On</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">09</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Packages</a
+                            >
+                        </li>
+                        <li>
+                            <span class="caption">10</span
+                            ><a href="#" class="pl-[35px] text-[23px] md:text-[28px] lg:text-[32px]"
+                                >Gallery</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- ScrollRevveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- JS BASE -->
+    <script src="./assets/js/main.js"></script>
+    <!-- JQUERY -->
+    <script src="./assets/utils/jquery.min.js"></script>
+    <!-- OWLCAROUSEL 2 -->
+    <script src="./assets/utils/owlCarousel2/owl.carousel.min.js"></script>
+    <!-- JS UTILS -->
+    <script src="./assets/js/utils.js"></script>
+</html>

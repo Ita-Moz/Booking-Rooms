@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Recole";
+    src: url(../font/3800F0_0_0.woff2);
+    font-weight: 400;
+}
+:root {
+    --font-body: "Roboto", sans-serif;
+    --font-title: "Recole", sans-serif;
+    --color-text: #455d58;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-title);
+    font-size: 1rem;
+    line-height: 1.2;
+    color: white;
+    background-color: #faf7f2;
+    font-weight: 400;
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.li {
+    @apply relative flex items-center justify-center py-[18px] text-[19px] border-b-[1px] transition-opacity duration-500 hover:opacity-[0.7] md:py-[27px] lg:justify-start lg:text-[24px];
+}
+.li_before {
+    @apply before:content-['']  before:bg-red-500 before:absolute before:left-[15%] before:top-1/2 before:rounded-full before:w-[5px] before:h-[5px] lg:before:left-[-20px];
+}
+.btn {
+    @apply flex justify-center items-center border-[1px] rounded-md;
+}
+
+/* show sub nav */
+.sub__nav--show {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.hidden {
+    animation: identifier 0.5s ease;
+}
+.caption {
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+.list__menu-1 li,
+.list__menu-2 li {
+    margin-bottom: 32px;
+}
+
+.right-to-left {
+    animation: right-to-left 0.7s ease-in-out;
+}
+@keyframes right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes identifier {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*hide element when screen <768px*/
+@media screen and (max-width: 768px) {
+    .navbar__list.hide-mobile a span {
+        display: none;
+    }
+    #gallery.hide-mobile {
+        display: none;
+    }
+}
+/* owl-carousel2 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .owl-stage .owl-item {
+        width: 580px !important;
+    }
+    .owl-carousel {
+        position: relative;
+    }
+    .owl-nav {
+        position: absolute;
+        font-size: 36px;
+        top: -100px;
+        right: 62px;
+        display: flex;
+        gap: 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .owl-carousel {
+        position: relative;
+    }
+    .owl-nav {
+        position: absolute;
+        font-size: 36px;
+        top: -100px;
+        right: 70px;
+        display: flex;
+        gap: 50px;
+    }
+    .brand {
+        display: block;
+    }
+}
